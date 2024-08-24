@@ -10,6 +10,8 @@ https://docs.rundeck.com/docs/api/api_basics.html#the-rundeck-api
 
 https://docs.rundeck.com/docs/learning/howto/welcome-project-starter.html#installing-the-welcome-project
 
+## api
+https://docs.rundeck.com/docs/api/api_basics.html#the-rundeck-api
 
 ## on laptop
 F.T
