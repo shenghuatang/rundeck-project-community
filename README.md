@@ -4,6 +4,11 @@
 
 This repo has a complete Docker environment with a project that includes sample jobs showing how Rundeck can integrate to turn alerts into action using our Community software edition.
 
+## on laptop
+
+sudo service docker start
+
+
 
 ## Setup / Starting the environment
 Running this requires [Docker](https://www.docker.com/) installed on your machine.  We recommend the latest version.
