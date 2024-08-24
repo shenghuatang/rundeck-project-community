@@ -4,8 +4,15 @@
 
 This repo has a complete Docker environment with a project that includes sample jobs showing how Rundeck can integrate to turn alerts into action using our Community software edition.
 
-## on laptop
+## reference
+F.T
+https://docs.rundeck.com/docs/api/api_basics.html#the-rundeck-api
 
+https://docs.rundeck.com/docs/learning/howto/welcome-project-starter.html#installing-the-welcome-project
+
+
+## on laptop
+F.T
 sudo service docker start
 
 
