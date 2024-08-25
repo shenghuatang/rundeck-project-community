@@ -1,0 +1,326 @@
+{
+	"info": {
+		"_postman_id": "31a0bdc3-7115-43c8-a15f-01241d35f58c",
+		"name": "rundeck",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2404161",
+		"_collection_link": "https://red-zodiac-149175.postman.co/workspace/stockpick~2b9eea85-f382-4cf7-b7c8-89e1262e3810/collection/2404161-31a0bdc3-7115-43c8-a15f-01241d35f58c?action=share&source=collection_link&creator=2404161"
+	},
+	"item": [
+		{
+			"name": "authenticaton",
+			"item": [
+				{
+					"name": "List tokens",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "list user tokens",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "token details",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "create token",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "delete token",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Rundeck-Auth-Token",
+								"value": "EsMOdQNJy43Jg3WbtkGEGp3L3T1yhZ4w"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4440/api/21/token/44800c4e-b023-497d-9cef-057f1c175bf4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4440",
+							"path": [
+								"api",
+								"21",
+								"token",
+								"44800c4e-b023-497d-9cef-057f1c175bf4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "jobs",
+			"item": [
+				{
+					"name": "list jobs",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "run job",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "executing a jon",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Project",
+			"item": [
+				{
+					"name": "List project",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "get project info",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "execution",
+			"item": [
+				{
+					"name": "Execution State",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Rundeck-Auth-Token",
+								"value": "EsMOdQNJy43Jg3WbtkGEGp3L3T1yhZ4w"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4440/api/21/execution/[ID]/state",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4440",
+							"path": [
+								"api",
+								"21",
+								"execution",
+								"[ID]",
+								"state"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "query execution",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "get executions for a job",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Rundeck-Auth-Token",
+								"value": "EsMOdQNJy43Jg3WbtkGEGp3L3T1yhZ4w"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4440/api/44/job/50aa1e22-3e75-41fd-aa07-0cc5e5b2666e/executions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4440",
+							"path": [
+								"api",
+								"44",
+								"job",
+								"50aa1e22-3e75-41fd-aa07-0cc5e5b2666e",
+								"executions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "get systeminfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{rdeck_hostname}}:{{rdeck_port}}/api/{{rdeck_api_version}}/system/info",
+					"host": [
+						"{{rdeck_hostname}}"
+					],
+					"port": "{{rdeck_port}}",
+					"path": [
+						"api",
+						"{{rdeck_api_version}}",
+						"system",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "run job",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{rdeck_hostname}}:{{rdeck_port}}/api/{{rdeck_api_version}}/job/3a13fca8-4d42-417e-812b-5f2f700dccb3/run",
+					"host": [
+						"{rdeck_hostname}}"
+					],
+					"port": "{{rdeck_port}}",
+					"path": [
+						"api",
+						"{{rdeck_api_version}}",
+						"job",
+						"3a13fca8-4d42-417e-812b-5f2f700dccb3",
+						"run"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{rdeck_key}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "X-Rundeck-Auth-Token",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "rdeck_hostname",
+			"value": "localhost",
+			"type": "string"
+		},
+		{
+			"key": "rdeck_port",
+			"value": "4440",
+			"type": "string"
+		},
+		{
+			"key": "rdeck_api_version",
+			"value": "44",
+			"type": "string"
+		},
+		{
+			"key": "rdeck_key",
+			"value": "ENgnNVPz1fQbaiolZKu31plVdCxdluwY",
+			"type": "string"
+		}
+	]
+}
